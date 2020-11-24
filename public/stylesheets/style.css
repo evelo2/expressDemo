@@ -1,0 +1,40 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navigation ul {
+  list-style: none;
+  text-align: center;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+
+.navigation ul li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.navigation ul li:last-child {
+  margin-right: 0;
+}
+
+.navigation ul li:hover {
+  background-color: aquamarine;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+}
+
+.person .name, .person .age {
+  display: inline-block;
+}
+
+
