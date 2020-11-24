@@ -1,3 +1,5 @@
+import { loadNavHTML } from './navLoader.js';
+
 // Person Template
 const personTemplate = ({ name, age }) => `
     <div class="person">
@@ -15,14 +17,6 @@ const loadPeople = async () => {
                      .join('');
 
     document.querySelector('.people-list').innerHTML = html;
-};
-
-// Load HTML
-const loadNavHTML = async () => {
-    const res = await fetch('nav');
-    const html = await res.text();
-
-    document.querySelector('.navigation ul').innerHTML = html;
 };
 
 // Set our page load

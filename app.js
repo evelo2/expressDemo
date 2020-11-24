@@ -9,6 +9,8 @@ var indexRouter = require('./routes/index');
 var navRouter = require('./routes/navRouter');
 // Declare our People Router
 var peopleRouter = require('./routes/peopleRoute');
+// Declare Add Person (To demo POST)
+var addPersonRouter = require('./routes/addPersonRoute');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -28,6 +30,8 @@ app.use('/', indexRouter);
 app.use('/nav', navRouter);
 // Set up the people route
 app.use('/people', peopleRouter);
+// Set up the add person route
+app.use('/add', addPersonRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

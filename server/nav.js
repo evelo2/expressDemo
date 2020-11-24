@@ -4,10 +4,6 @@ const nav = [
         name: "Home"
     },
     {
-        link: "/people",
-        name: "People"
-    },
-    {
         link: "/add",
         name: "Add Person"
     },
