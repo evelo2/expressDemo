@@ -1,5 +1,11 @@
+:root {
+  --nav-border: blue;
+  --nav-hover: aquamarine;
+}
+
 body {
-  padding: 50px;
+  margin: 0px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,11 +13,21 @@ a {
   color: #00B7FF;
 }
 
+p,
+section {
+  margin-left: .5rem;
+}
+
+h1.title {
+  display: block;
+  text-align: center;
+}
+
 .navigation ul {
   list-style: none;
   text-align: center;
-  border-top: 2px solid blue;
-  border-bottom: 2px solid blue;
+  border-top: 2px solid var(--nav-border);
+  border-bottom: 2px solid var(--nav-border);
 }
 
 .navigation ul li {
@@ -19,6 +35,7 @@ a {
   font-weight: bold;
   font-size: 2rem;
   margin-right: 1rem;
+  padding: .25rem;
 }
 
 .navigation ul li:last-child {
@@ -26,7 +43,7 @@ a {
 }
 
 .navigation ul li:hover {
-  background-color: aquamarine;
+  background-color: var(--nav-hover);
 }
 
 .navigation ul li a {
